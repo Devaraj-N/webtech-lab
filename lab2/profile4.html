@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Hal Jordan</span> </h1>
+
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <hr style="width:200px" class="w3-opacity">
+    <p>A fresher just completed his post-graduate course last year. Top Ranked student with lot to offer and willing to learn.
+My education details:<br>
+<table border = "1" cellpadding = "5" cellspacing = "5">
+  <tr>
+    <th>Education</th>
+    <th>Year of Completion</th>
+    <th>Percentage Obtained</th>
+  </tr>
+  <tr>
+    <td>Coast City High School</td>
+    <td>2005</td>
+    <td>96%</td>
+  </tr>
+  <tr>
+    <td>Yale University</td>
+    <td>2008</td>
+    <td>95%</td>
+  </tr>
+  <tr>
+    <td>Princeton University</td>
+    <td>2011</td>
+    <td>93%</td>
+  </tr>
+<tr>
+            <td colspan = "3">Undergoing Internship at Ferris Airlines</td>
+         </tr>
+</table>
+
+<h2> This is one of my photography projects:<br>
+<iframe src="p1.html" style="height:400px;width:600px;" title="Iframe Example"></iframe>
+
+<br>
+
+<h2>Find the clickable part in this image and find what lies the next side</h2><br>
+<img src="E:\Gallery\Twitter\IMG_20210111_131754.jpg" style="height:400px; width:700px" alt="home" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="d1" href="d1.html">
+  <area shape="rect" coords="290,172,333,250" alt="d2" href="d2.html">
+  <area shape="circle" coords="337,300,44" alt="d3" href="d3.html">
+</map>
+<h2><a href="d4.html">My painting</a></h2>
+
+
+<!-- END PAGE CONTENT -->
+
+
+</body>
+</html>
