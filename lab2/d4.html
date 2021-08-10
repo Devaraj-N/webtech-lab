@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<p>This is an image that I drew. Try copying it in the space below.:</p>
+<img id="scream" src="E:\Gallery\Twitter\IMG_20210105_011103.jpg" alt="The wisdom" width="420" height="407">
+
+<p>Canvas to fill:</p>
+<canvas id="myCanvas" width="720" height="807"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<p><button onclick="myCanvas()">Try it</button></p>
+
+<script>
+function myCanvas() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("scream");
+  ctx.drawImage(img,10,10);
+}
+</script>
+
+</body>
+</html>
