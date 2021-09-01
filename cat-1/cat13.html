@@ -1,0 +1,70 @@
+<html>
+<head>Tourism India
+<style>
+a:link {
+  text-decoration: none;
+  color: grey;
+}
+
+a:visited {
+  color:green;
+  text-decoration: none;
+}
+
+a:hover {
+  color:gold;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+  color: black;
+}
+#p4{background-color:hsla(120, 60%, 70%, 0.3);}
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="p4">
+<h4>Congratulations on successfully logging-in. </h2>
+<b>These are some of the most frequently travelled places in our country.</b>
+<p>Click on them to know more about the places</p>
+<ol>
+<li><a href="dest1.html">Mausinram</a></li>
+<li><a href="dest2.html"> Maldives</a></li>
+<li><a href="dest3.html">Kodaikanal</a></li>
+</ol>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
