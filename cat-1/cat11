@@ -1,0 +1,30 @@
+<html>
+<head>Tourism India
+<style>
+#p4{background-color:hsla(120, 60%, 70%, 0.3);}
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+</style>
+</head>
+<body id="p4">
+<center><h2>Welcome to Tourism India</h2></center>
+<p><div class="static">Tourism India is a tourism helpline website that helps people to know more about all the various exciting places that must be visited in this beautiful country<</div>
+<br><p>Some of the places that beautiful places in our country:<br>
+<img src="E:\Gallery\Twitter\IMG_20191212_134715.jpg" height=300 width=300>
+<img src="E:\Gallery\Twitter\IMG_20210312_224831.jpg" height=300 width=300>
+<form action="cat12.html">
+<button type="submit">
+Click here to Regster
+</button>
+</form>
+</body>
+</html>
